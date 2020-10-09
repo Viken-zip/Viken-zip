@@ -1,0 +1,30 @@
+.ruta1{
+    color: white;
+    background-color: black;
+    margin-bottom: 1%;
+    width: 100%;
+}
+.ruta2{
+    color: white;
+    background-color: grey;
+    margin-bottom: 1%;
+    width: 50%;
+}
+.ruta3{
+    color: black;
+    background-color: lightgray;
+    margin-bottom: 1%;
+    width: 25%;
+}
+.ruta4{
+    color: white;
+    background-color: red;
+    margin-bottom: 1%;
+    width: 500px;
+}
+.ruta5{
+    color: white;
+    background-color: blue;
+    margin-bottom: 1%;
+    width: 250px;
+}
