@@ -1,0 +1,25 @@
+@font-face {
+    font-family: sans-serif;
+}
+h1{
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    font-size: 57px;
+    padding: 10px;
+    margin: 0px
+}
+p{
+    background-color:rgb(238, 236, 236);
+    padding: 5px;
+    margin: 0px;
+}
+h3{
+    font-family: sans-serif;
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 7px
+}
