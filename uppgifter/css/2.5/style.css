@@ -1,0 +1,16 @@
+.Box1 {
+    padding: 20px;
+    color: white;
+    background-color: red;
+}
+.Box2 {
+    margin: 20px;
+    color: white;
+    background-color: green;
+}
+.Box3 {
+    width: 200px;
+    height: 100px;
+    color: white;
+    background-color: blue;
+}
