@@ -1,3 +1,39 @@
-a{
-    
+@font-face {
+    font-family: sans-serif;
+}
+.button{
+    border: 1px solid black;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: black;
+}
+.--red{
+    border: 1px solid red;
+    color: red;
+}
+.--green{
+    border: 1px solid green;
+    color: green;
+}
+.--blue{
+    border: 1px solid blue;
+    color: blue;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}
+.--red:hover{
+    background-color: red;
+    color: white;
+}
+.--green:hover{
+    background-color: green;
+    color: white;
+}
+.--blue:hover{
+    background-color: blue;
+    color: white;
 }
