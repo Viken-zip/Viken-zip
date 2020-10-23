@@ -1,0 +1,90 @@
+@font-face {
+    font-family: sans-serif;
+}
+body{
+    margin: 0px;
+}
+.Background{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgrey;
+}
+.rad1{
+    height: 100%;
+    width: 33%;
+}
+.rad2{
+    height: 100%;
+    width: 34%;
+}
+.rad3{
+    height: 100%;
+    width: 33%;
+}
+.cardh{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 33%;
+}
+.cardhm{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 34%;
+}
+.cardb{
+    border-radius: 30px;
+    height: 90%;
+    width: 90%;
+    background-color: grey;
+    box-shadow: 5px 5px 5px rgb(71, 71, 71);
+}
+.car{
+    border-radius: 30px;
+    background-position: center;
+    background-size: 450px;
+    height: 90%;
+    width: 100%;
+}
+.car0t{
+    margin-top: 2px;
+    height: 20%;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.--c0{
+    background-image: url("r8_lb.jpg");
+}
+.--c1{
+    background-image: url("nsx.png");
+}
+.--c2{
+    background-image: url("350z.png");
+}
+.--c3{
+    background-image: url("200sx.png");
+}
+.--c4{
+    background-image: url("rx7.png");
+}
+.--c5{
+    background-image: url("s15.png");
+}
+.--c6{
+    background-image: url("evo.png");
+}
+.--c7{
+    background-image: url("r33.png");
+}
+.--c8{
+    background-image: url("focus.jpg");
+}
+.cardb:hover{
+    box-shadow: 15px 15px 15px rgb(71, 71, 71);
+}
