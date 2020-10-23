@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: sans-serif;
+}
+.main{
+    display: flex;
+    width: 100vw;
+    height: 275vh;
+    background-image: url("Sherlock_Cheems.png");
+    background-size: 100rem;
+}
+.title{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 125px;
+    color: green;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 5px grey
+}
+.side_box{
+    height: 100%;
+    width: 75%;
+}
+.true_side{
+    height: 100%;
+    width: 25%;
+}
+.knp{
+    border: 1px solid red;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: black;
+}
+.--red:hover{
+    background-color: red;
+    color: white;
+}
