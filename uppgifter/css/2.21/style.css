@@ -34,7 +34,7 @@ p{
     font-size: 1.25rem;
     margin-top: 0px;
 }
-.--ooo{
+.--hover{
     font-size: 0.9rem;
     font-weight: 100;
     display: flex;
@@ -61,7 +61,7 @@ p{
     width: 100px;
     height: 100%;
 }
-.conbox:hover{
+.conbox{
     background-color: red;
 }
 .abobox:hover{

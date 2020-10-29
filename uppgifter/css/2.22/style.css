@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+}
+.image{
+    width: 13rem;
+    height: 13rem;
+    background-position: center;
+    background-size: 300px;
+    margin: 1rem;
+}
+.D{
+    background-image: url("dog.jpg");
+}
+.Ca{
+    background-image: url("cat.jpg");
+}
+.Co{
+    background-image: url("cow.jpg");
+}
+.box{
+    display: flex;
+    height: 15rem;
+    background-color: white;
+    width: 500px;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 1px rgb(180, 179, 179);
+    margin: 2rem auto;
+}
