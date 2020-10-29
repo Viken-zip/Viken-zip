@@ -1,7 +1,7 @@
 body{
     margin: 0px;
 }
-.Yes {
+.topbar{
     height: 85px;
     background-color: black;
     display: flex;
@@ -15,24 +15,18 @@ body{
     height: 100%;
     display: flex;
 }
-.textbox{
-    background-color: black;
-    width: 25%;
-    height: 100%;
-}
-h1, p{
+h1, span{
     font-family: sans-serif;
 }
 h1{
-    margin-top: 5%;
+    margin: 0px;
     font-weight: lighter;
     color: white;
-    margin-bottom: 0px;
 }
-p{
+span{
     color: grey;
     font-size: 1.25rem;
-    margin-top: 0px;
+    margin: 0px
 }
 .--hover{
     font-size: 0.9rem;
@@ -43,30 +37,19 @@ p{
     font-family: sans-serif;
     color: white;
     background-color: black;
-    height: 95%;
-    width: 100%;
-}
-.yes{
-    display: flex;
-}
-.conbox{
     width: 100px;
     height: 100%;
 }
-.abobox{
-    width: 100px;
-    height: 100%;
+.--hover:hover{
+    box-shadow: 0px -7px 0px rgb(255, 4, 159) inset;
 }
-.hombox{
-    width: 100px;
-    height: 100%;
+.hom{
+    box-shadow: 0px -7px 0px red inset;
+    margin-left: auto;
 }
-.conbox{
-    background-color: red;
-}
-.abobox:hover{
-    background-color: red;
-}
-.hombox:hover{
-    background-color: red;
+.logo{
+    margin: auto 0px;
+    width: auto;
+    text-align: center;
+    background-color: black;
 }
