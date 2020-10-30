@@ -41,6 +41,7 @@ body{
     height: 90%;
     width: 90%;
     background-color: grey;
+    transition: 1s;
     box-shadow: 5px 5px 5px rgb(71, 71, 71);
 }
 .car{
@@ -90,5 +91,43 @@ body{
     background-image: url("focus.jpg");
 }
 .cardb:hover{
+    transition: 1s;
     box-shadow: 15px 15px 15px rgb(71, 71, 71);
 }
+.backside{
+    height: 90%;
+    width: 90%;
+}
+.flip-card {
+    background-color: transparent;
+    width: 90%;
+    height: 90%;
+    border: 1px solid #f1f1f1;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .--a, .backside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .--a {
+    background-color: #bbb;
+    color: black;
+  }
+  .backside {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }

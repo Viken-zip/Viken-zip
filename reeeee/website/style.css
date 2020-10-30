@@ -1,0 +1,53 @@
+* { margin: 0; }
+body{
+    margin: 0px;
+}
+.topbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(32, 204, 235);
+}
+h1{
+    font-size: 100px;
+    font-family: sans-serif;
+    color: white;
+}
+.topbar{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+.topleft{
+    height: 100%;
+    width: 15%;
+    background-color: rgb(39, 39, 39);
+}
+.leftbar{
+    height: 150vh;
+    width: 15%;
+    background-color: lightgray;
+}
+.mainbox{
+    height: 150vh;
+    width: 85%;
+    background-color: rgb(100, 100, 100);
+}
+.boxholder{
+    display: flex;
+    width: 100%;
+    height: 150vh;
+}
+.buttonbox{
+    width: 100%;
+    height: 125px;
+    background-color: hotpink;
+}
+a:active  {
+    background-color: white;
+    height: 150vh;
+    width: 85%;
+  }
