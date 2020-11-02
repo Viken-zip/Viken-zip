@@ -11,7 +11,7 @@ body{
    margin-bottom: 20px;
 }
 h1{
-    font-size: 40px;
+    font-size: 60px;
     margin: 0px;
     font-family: sans-serif;
 }
@@ -38,7 +38,11 @@ p{
 }
 .text{
     margin: 20px 0px;
-    width: auto;
+    width: 700px;
     height: auto;
-    margin: 40px 10vw;
+    margin: 0px auto;
+}
+.textmargin{
+    display: flex;
+    width: 100%;
 }
