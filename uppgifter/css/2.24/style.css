@@ -15,7 +15,7 @@ body{
     box-shadow: black 10px 10px 400px inset, black -10px -10px 400px inset;
 }
 @keyframes back-shadow{
-    from {box-shadow: black 600px 600px 0px inset, black -600px -600px 0px inset;}
+    from {box-shadow: black 1200px 1200px 0px inset, black -1200px -1200px 0px inset;}
   to {box-shadow: black 10px 10px 400px inset, black -10px -10px 400px inset;}
 }
 .topbar{
