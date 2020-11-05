@@ -14,7 +14,7 @@ body{
     box-shadow: black 10px 10px 400px inset, black -10px -10px 400px inset;
 }
 @keyframes back-shadow{
-    from {box-shadow: black 200px 200px 0px inset, black -200px -200px 0px inset;}
+    from {box-shadow: black 600px 600px 0px inset, black -600px -600px 0px inset;}
   to {box-shadow: black 10px 10px 400px inset, black -10px -10px 400px inset;}
 }
 .box{
@@ -24,7 +24,7 @@ body{
 }
 .topbar{
     position: relative;
-    width: 100%;
+    width: 75%;
     height: 400px;
     background-color: black;
     display: flex;
@@ -35,6 +35,8 @@ body{
     background-position: center;
     margin-bottom: 40px;
     box-shadow: black 5px 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1{
     font-family: sans-serif;
@@ -44,12 +46,15 @@ h1{
     left: 40px;
     margin-bottom: 0px;
 }
-.button{
+a{
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
+    font-family: sans-serif;
+    background-color: white;
+    border-radius: 5px;
   }
   .button1{
     bottom: 1px;
@@ -119,20 +124,24 @@ h1{
 }
 .gp1{
       background-image: url("gp1.jpg");
+      margin-left: auto;
 }
 .gp2{
     background-image: url("gp2.jpg");
+    margin-right: auto;
 }
 .gp3{
     background-image: url("gp3.jpg");
+    margin-left: auto;
 }
 .gp4{
     background-image: url("gp4.jpg");
-    margin-left: auto;
+    margin-right: auto;
 }
 .gp5{
     background-image: url("gp5.jpg");
     margin-right: auto;
+    margin-left: auto;
 }
 .row{
     width: 100%;
@@ -140,7 +149,7 @@ h1{
     display: flex;
 }
 .description{
-    width: 95%;
+    width: 90%;
     height: 95%;
     display: flex;
     flex-direction: column;
@@ -153,33 +162,33 @@ h2,p{
 h2{
     margin: 0px;
     font-size: 30px;
-    color: grey;
+    color: whitesmoke;
 }
 p{
     margin: 0px;
     margin-top: 5px;
     font-size: 20px;
     font-weight: 600;
-    color: rgb(177, 177, 177);
+    color: whitesmoke;
 }
 li{
     color: whitesmoke;
     font-weight: 900;
     font-family: sans-serif;
     text-shadow: black 2px 2px 4px;
-    color: rgb(177, 177, 177);
+    color: whitesmoke;
 }
 ul.a {
     list-style-type: square;
 }
 .descriptionbox{
-    width: 100%;
-    height: 900px;
-    background-color: black;
+    width: 70%;
+    height: 1100px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    box-shadow: black 5px 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
