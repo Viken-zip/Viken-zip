@@ -186,6 +186,21 @@ a{
         height: auto;
         width: 500px;
     }
+    .img1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    .imgholder{
+        flex-direction: column;
+        height: auto;
+        width: 350px;
+    }
 }
 @media only screen and (max-width: 600px){
     .img{
