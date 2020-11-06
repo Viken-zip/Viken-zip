@@ -51,7 +51,7 @@ a{
     background-color: white;
     border-radius: 5px;
 }
-  .button1{
+.button1{
     bottom: 1px;
     color: blue;
     border: blue 2px solid;
@@ -104,8 +104,6 @@ a{
     transition: 250ms;
 }
 .imagebox{
-    height: 843px;
-    width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -120,19 +118,15 @@ a{
 }
 .gp1{
     background-image: url("gp1.jpg");
-    margin-left: auto;
 }
 .gp2{
     background-image: url("gp2.jpg");
-    margin-right: auto;
 }
 .gp3{
     background-image: url("gp3.jpg");
-    margin-left: auto;
 }
 .gp4{
     background-image: url("gp4.jpg");
-    margin-right: auto;
 }
 .gp5{
     background-image: url("gp5.jpg");
