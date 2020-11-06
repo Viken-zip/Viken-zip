@@ -220,7 +220,6 @@ a{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-    background-color: teal;
 }
 @media only screen and (max-width: 1000px){
     .description{
