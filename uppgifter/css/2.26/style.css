@@ -1,0 +1,226 @@
+body{
+    margin: 0px;
+}
+.background{
+    background-image: url("rainbow.png");
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: black 50px 50px 100px inset, black -50px -50px 100px inset;
+}
+.banner{
+    border-radius: 20px;
+    margin-top: 50px;
+    background-image: url("unicorn_banner.png");
+    height: 275px;
+    width: 1000px;
+    background-size: 1000px;
+    box-shadow: white 10px 10px 20px, white -10px -10px 20px, white -10px 10px 20px, white 10px -10px 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+@media only screen and (max-width:1000px){
+    .banner{
+        width: 750px;
+    }
+}
+@media only screen and (max-width:750px){
+    .banner{
+        width: 500px;
+    }
+}
+@media only screen and (max-width:500px){
+    .banner{
+        width: 300px;
+    }
+}
+h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 90px;
+    margin-left: 300px;
+    -webkit-text-stroke: 5px black;
+    margin-bottom: 0px;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 5s infinite linear;
+}
+@media only screen and (max-width:1000px){
+    h1{
+        font-size: 60px;
+        -webkit-text-stroke: 3px black;
+    }
+}
+@media only screen and (max-width:750px){
+    h1{
+        font-size: 40px;
+        -webkit-text-stroke: 2px black;
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width:500px){
+    h1{
+        font-size: 40px;
+        -webkit-text-stroke: 2px black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+}
+.topbartext{
+    color: yellow;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 300px;
+    -webkit-text-stroke: 3px black;
+    font-weight: 900;
+    margin-top: 0px;
+}
+@media only screen and (max-width:1000px){
+    .topbartext{
+        font-size: 35px;
+        -webkit-text-stroke: 2px black;
+    }
+}
+@media only screen and (max-width:750px){
+    .topbartext{
+        font-size: 30px;
+        -webkit-text-stroke: 1px black;
+        margin-left: 200px;
+    }
+}
+@media only screen and (max-width:500px){
+    .topbartext{
+        font-size: 30px;
+        -webkit-text-stroke: 1px black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.puls{
+    animation: puls 1.25s infinite;
+}
+@-webkit-keyframes puls{
+    0%{color:white;}
+    110%{color: yellow;}
+}
+@-webkit-keyframes puls{
+    0%{-webkit-text-stroke: 3px white;}
+    100%{-webkit-text-stroke: 3px black;}
+}
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+}
+.button{
+    background-color: white;
+    border: black solid 3px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: black inset 1px 1px 2px, black 2px 2px 4px;
+    font-family: sans-serif;
+}
+.button:hover{
+    background-color: black;
+    border: white solid 3px;
+    color: white;
+    box-shadow: white inset 1px 1px 2px, black 2px 2px 4px;
+}
+a{
+    margin: 0px;
+}
+.img{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    background-size:500px;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: black 10px 10px 20px;
+}
+.img1{
+    background-image: url("unicornmeat1.jpg");
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.img2{
+    background-image: url("unicornmeat2.jpg");
+    height: 375px;
+    margin-right: 0px;
+}
+.img3{
+    background-image: url("unicornmeat3.JPG");
+    height: 375px;
+    margin-bottom: 50px;
+}
+.imgholder{
+    display: flex;
+    width: 1050px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 1050px){
+    .imgholder{
+        flex-direction: column;
+        height: auto;
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .img{
+        background-size: 300px;
+        width: 300px;
+        height: 225px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img1{
+        height: 300px;
+    }
+}
+.description{
+    margin-top: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+@media only screen and (max-width: 1000px){
+    .description{
+        width: auto;
+    }
+}
+.descriptiontext{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    text-shadow: black 2px 2px 4px;
+    margin-top: 0px;
+}
+.red{
+    color: red;
+    margin-bottom: 0px;
+}
