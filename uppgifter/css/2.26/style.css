@@ -43,8 +43,8 @@ h1{
     margin-left: 300px;
     -webkit-text-stroke: 5px black;
     margin-bottom: 0px;
-    color: #f35626;
-    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    color: red;
+    background-image: -webkit-linear-gradient(92deg, red, yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 5s infinite linear;
