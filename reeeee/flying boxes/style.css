@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 150px;
+    top: 150px;
+    animation: 1s move infinite;
+}
+/*
+@keyframes move{
+    0%{left: 20px;}
+    20%{left: 100px; top: 20px; transform: rotateZ(0deg);}
+    25%{left: 100px; top: 20px; transform: rotateZ(90deg);}
+    45%{top: 50px; left: 100px; transform: rotateZ(90deg);}
+    50%{top: 50px; left: 100px; transform: rotateZ(180deg);}
+    70%{top: 50px; left: 20px; transform: rotateZ(180deg);}
+    75%{top: 50px; left: 20px; transform: rotateZ(270deg);}
+    95%{left: 20px; top: 20px; transform: rotateZ(270deg);}
+    100%{transform: rotateZ(360deg);}
+}
+*/
+@keyframes move{
+    0%{transform: scaleZ(0deg);}
+    100%{transform: rotateZ(420deg);}
+}
+.äppel{
+    background-image: url("äppel.jpg");
+}
+.banan{
+    background-image: url("banan.jpg");
+}
+.päron{
+    background-image: url("päron.jpg");
+}
+.i{
+    background-position: center;
+    background-size: 200px;
+}
