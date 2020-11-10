@@ -1,0 +1,33 @@
+
+body {
+    margin: opx;
+  }
+  
+  #btn {
+    display: block;
+    margin: auto;
+  }
+  
+.sidebar{
+  width: 28px;
+  height: 99vh;
+  border: green 1px solid;
+}
+  
+  .grow {
+    animation-duration: 2s;
+    animation-name: changeHeight;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes changeHeight {
+    25% {
+      height: 600px;
+    }
+    50% {
+      height: 500px;
+    }
+    100% {
+      height: 1000px;
+    }
+  }

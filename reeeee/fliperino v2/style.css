@@ -1,0 +1,33 @@
+body{
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+img{
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+}
+h1{
+  color: red;
+  font-size: 100px;
+  font-family: sans-serif;
+  font-weight: 900;
+  animation: rgb 100ms infinite;
+}
+@keyframes rgb{
+  0%{color: red;}
+  33%{color: green;}
+  66%{color: blue;}
+  100%{color: red;}
+}
+img{
+  animation: yes 2s infinite;
+}
+@keyframes yes{
+  0%{transform: scaleZ(0deg);}
+  50%{transform: rotateZ(3600deg);}
+  100%{transform: rotateZ(0deg);}
+}
