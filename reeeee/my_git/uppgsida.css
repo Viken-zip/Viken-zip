@@ -3,6 +3,7 @@ body{
 }
 .background{
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 1450px;
     background-color: cornflowerblue;
@@ -23,11 +24,106 @@ h1{
     margin-top: 20px;
     margin-bottom: 0px;
 }
-a{
+.lista{
     font-family: sans-serif;
     margin-left: 20px;
     font-size: 20px;
     text-decoration: none;
     color: deepskyblue;
     -webkit-text-stroke: 1px black;
+}
+h2{
+    color: white;
+    margin: 0px;
+    font-size: 80px;
+    font-family: sans-serif;
+}
+h4{
+    color: white;
+    margin: 0px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+span{
+    font-family: sans-serif;
+}
+.topbuttontext{
+    color: white;
+    font-size: 50px;
+}
+.fri{
+    font-size: 40px;
+}
+.gjo{
+    font-size: 30px;
+}
+.topbartitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.topbarholder{
+    display: flex;
+    width: 1800px;
+    height: 100%;
+    margin: 0px auto;
+}
+.topbar{
+    display: flex;
+    width: 100% 10px;
+    height: 140px;
+    background-color: black;
+    border: white 5px solid;
+    position: sticky;
+    top: 0;
+}
+.topbutton, .first, .sec{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topbutton, .first{
+    box-shadow: 2px 2px red inset, -2px -2px red inset;
+    animation: noselect 1s;
+}
+.first{
+    margin-left: auto;
+}
+.sec{
+    box-shadow: 2px 2px red inset, -2px -10px red inset;
+    animation: noselected 1s;
+}
+.sec:hover{
+    animation: selected 1s;
+    box-shadow: 5px 5px 10px red inset, -5px -5px 10px red inset;
+}
+.topbutton:hover, .first:hover{
+    animation: select 1s;
+    box-shadow: 5px 5px 10px red inset, -5px -5px 10px red inset;
+}
+@keyframes select{
+    0%{box-shadow: 1px 1px 0px red inset, -2px -2px 0px red inset;}
+    100%{box-shadow: 5px 5px 10px red inset, -5px -5px 10px red inset;}
+}
+@keyframes noselect{
+    0%{box-shadow: 5px 5px 10px red inset, -5px -5px 10px red inset;}
+    100%{box-shadow: 2px 2px 0px red inset, -2px -2px 0px red inset;}
+}
+@keyframes selected{
+    0%{box-shadow: 2px 2px 0px red inset, -2px -10px 0px red inset;}
+    100%{box-shadow: 5px 5px 10px red inset, -5px -15px 10px red inset;}
+}
+@keyframes noselected{
+    0%{box-shadow: 5px 5px 10px red inset, -5px -15px 10px red inset;}
+    100%{box-shadow: 2px 2px 0px red inset, -2px -10px 0px red inset;}
 }
