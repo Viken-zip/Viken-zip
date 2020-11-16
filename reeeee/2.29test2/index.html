@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="background">
+    <div class="card-holder">
+    <div class="card-container">
+        <div class="card-back">
+
+        </div>
+    </div>
+    </div>
+  </div>
+    <script>
+        const cardClass = 'card-container';
+        Array.from(document.getElementsByClassName(cardClass)).map(card => {
+          card.addEventListener('mouseover', onMouseOverCard);
+          card.addEventListener('mouseleave', onMouseLeaveCard);
+        });
+        function onMouseOverCard(event) {
+          event.target.classList.add('--forward');
+          event.target.classList.remove('--reverse');
+        }
+        function onMouseLeaveCard(event) {
+          event.target.classList.remove('--forward');
+          event.target.classList.add('--reverse');
+        }
+    </script>
+</body>
+</html>

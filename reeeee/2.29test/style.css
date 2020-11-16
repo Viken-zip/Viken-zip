@@ -1,0 +1,42 @@
+body{
+    background-color: khaki;
+    margin: 0px;
+    transform: perspective(1000px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    animation: shift 10s infinite;
+}
+@keyframes shift{
+    0%{transform: perspective(500px) rotateY(50deg);}
+    50%{transform: perspective(500px) rotateY(-180deg);}
+    75%{transform: perspective(500px) rotateY(180deg);}
+    100%{transform: perspective(500px) rotateY(50deg);}
+}
+.background{
+    width: 400px;
+    height: 400px;   
+    background-color: salmon;
+    display: flex;
+    animation: move 25s infinite;
+    transform: perspective(500px);
+}
+.background{
+    animation-delay: 1s;
+    transform-style: preserve-3d;
+    animation: rotateback;
+}
+.background:hover{
+    animation-delay: 1s;
+    transform-style: preserve-3d;
+    animation: rotate 1s;
+}
+@keyframes rotate{
+    0%{transform: rotateY(180deg);}
+    100%{transform: rotateY(0deg);}
+}
+@keyframes rotateback{
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(180deg);}
+}

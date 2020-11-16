@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-color: khaki;
+    display: flex;
+}
+.leftparent{
+    height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+}
+.midparent{
+    margin: auto auto;
+    height: 700px;
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: black 2px 2px 4px;
+}
+.rightparent{
+    margin: auto auto;
+    height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.all{
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: 250px;
+    margin: auto auto;
+    box-shadow: black 2px 2px 4px;
+    background-repeat: no-repeat;
+    border: white 10px solid;
+    border-radius: 5px;
+}
+h1, h3, p{
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-right: 10px 
+}
+p{
+    font-size: 20px;
+}
+.bill1{
+    transform: rotate(-5deg);
+    background-size: 300px;
+    background-image: url("bill1.jpg");
+}
+.bill2{
+    transform: rotate(3deg);
+    background-size: 550px;
+    background-image: url("bill2.jpg");
+}
+.bill3{
+    transform: rotate(5deg);
+    height: 400px;
+    background-size: 325px;
+    background-image: url("bill3.png");
+}
+@media only screen and (max-width: 1350px){
+    .background{
+        flex-direction: column;
+        height: 200vh;
+    }
+    .leftparent{
+        position: absolute;
+        margin-top: 800px;
+        left: 100px;
+    }
+    .rightparent{
+        position: absolute;
+        right: 100px;
+        margin-top: 800px;
+    }
+    .midparent{
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .rightparent{
+        margin-top: 1400px;
+        right: auto;
+    }
+    .leftparent{
+        left: auto;
+    }
+    .background{
+        height: 260vh;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 500px){
+    .midparent{
+        height: 750px;
+        width: 280px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .all{
+        transform: rotate(0deg);
+        left: auto;
+        right: auto;
+        width: 280px;
+        height: 300px;
+    }
+    .bill3{
+        height: 400px;
+    }
+    .background{
+        height: 375vh;
+    }
+}
+@media only screen and (min-width: 1500px){
+    .all{
+        width: 400px;
+        height: 400px;
+    }
+    .bill1{
+        background-size: 400px;
+    }
+    .bill2{
+        background-size: 750px;
+    }
+    .bill3{
+        height: 500px;
+        background-size: 400px;
+    }
+    .rightparent{
+        height: 900px;
+        width: 400px;
+    }
+    .leftparent{
+        height: 900px;
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 2000px){
+    .all{
+        width: 500px;
+        height: 500px;
+    }
+    .bill1{
+        background-size: 500px;
+    }
+    .bill2{
+        background-size: 900px;
+    }
+    .bill3{
+        height: 600px;
+        background-size: 500px;
+    }
+    .rightparent{
+        height: 1100px;
+        width: 600px;
+    }
+    .leftparent{
+        height: 1100px;
+        width: 600px;
+    }
+}

@@ -21,6 +21,8 @@ body{
     display: flex;
     animation: move 25s infinite;
     transform: perspective(500px) rotateY(30deg);
+    background-image: url("creepy.png");
+    background-position: center;
 }
 .other{
     background-color: skyblue;
