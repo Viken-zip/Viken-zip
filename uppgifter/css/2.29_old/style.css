@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+    background-color: khaki;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    transition-delay: 1s;
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    perspective: 1000px;
+    background-color: transparent;
+}
+.cardin{
+    position: relative;
+    width: 700px;
+    height: 700px;
+    transition-delay: 1s;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.card:hover .cardin{
+    transition-delay: 1s;
+    transform: rotateY(180deg);
+}
+  .cardfront, .cardback {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.cardfront{
+    background-color: khaki;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 700px;
+    height: auto;
+    border-radius: 5px;
+    animation: shadowback 1s;
+}
+img:hover{
+    animation: shadowfront 1s ;
+}
+.cardback{
+    background-color: turquoise;
+    color: black;
+    border-radius: 5px;
+    transform: rotateY(180deg);
+    animation: shadowfront 1s ;
+}
+.cardback:hover{
+    animation: shadowback 1s;
+}
+@keyframes shadowback{
+    0%{box-shadow: black 20px 20px 25px;}
+    100%{box-shadow:  black 0px 0px 0px;}
+}
+@keyframes shadowfront{
+    0%{box-shadow: black 0px 0px 0px;}
+    100%{box-shadow:  black 20px 20px 25px;}
+}
