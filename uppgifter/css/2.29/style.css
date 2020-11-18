@@ -115,7 +115,10 @@ p{
         height: 400px;
     }
     .background{
-        height: 2150px;
+        height: 2050px;
+    }
+    .rightparent{
+        height: 650px;
     }
 }
 @media only screen and (min-width: 1500px){

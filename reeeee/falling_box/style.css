@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-color: khaki;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

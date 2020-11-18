@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        <h1 onclick="change()" id="text">Cilck me</h1>
+    </div>
+    <script>
+        var chag = 0;
+        function change() {
+            if (chag === 0){
+                chag = chag + 1;
+                document.getElementById("text").innerHTML = 'click me again';
+                document.getElementById("text").style.color = "blue";
+            } else {
+                chag = chag - 1;
+                document.getElementById("text").innerHTML = 'click me';
+                document.getElementById("text").style.color = "green"; 
+            }
+        }
+    </script>
+</body>
+</html>
