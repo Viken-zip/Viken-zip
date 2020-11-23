@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+}
+.box{
+    width: 600px;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+}
+#ball{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    top: 20px;
+    left: 0px;
+}
