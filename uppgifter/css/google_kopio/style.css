@@ -1,0 +1,302 @@
+body{
+    margin: 0px;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    height: 30px;
+    width: auto;
+    position: absolute;
+    right: 0;
+    padding: 0px 30px;
+    top: 16px;
+    display: flex;
+}
+.moreiconbox{
+    width: 4px;
+    height: 4px;
+    margin: 1px 1px 1px 1px;
+    background-color: black;
+}
+.moreicon{
+    height: 30px;
+    width: 30px;
+    background-image: url("moreicongrey.png");
+}
+.moreicon:hover{
+    background-image: url("moreiconblack.png");
+    cursor: pointer;
+}
+.toptext{
+    width: 82;
+    height: 24;
+    padding: 0px 15px 0px 0px ;
+    display: flex;
+    align-items: center;
+}
+.aGmail{
+    padding: 0px 15px 0px 0px;
+}
+.signin, .GB, .button{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+}
+.GB:hover{
+    text-decoration: underline;
+    color: grey;
+}
+.signin{
+    height: 30px;
+    width: 70px;
+    background-color: rgb(70, 132, 238);
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin-left: 15px;
+}
+.signin:hover{
+    cursor: pointer;
+    box-shadow: rgb(222, 222, 222) 0px 1px;
+}
+img{
+    padding: 109px 0px 0px;
+    height: 92px;
+    width: 272px;
+}
+.logoholder{
+    width: 100%;
+    height: 233px;
+    margin: 89px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+.midholder{
+    width: 584px;
+    height: 134px;
+    padding: 6px 0px 0px;
+    background-color: white;
+    /*border: black 1px solid;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -11px;
+}
+.search{
+    width: 582px;
+    height: 44px;
+    background-color: white;
+    border-radius: 25px;
+    border: rgb(223,225,229) 1px solid;
+    display: flex;
+}
+.search:hover{
+    box-shadow: rgb(223,225,229) 0px 1px 5px 2px;
+    border: white 1px solid;
+}
+.searchiconsholder{
+    width: 560px;
+    height: 39px;
+    padding: 5px 8px 0px 13px;
+    margin-left: 1px;
+    display: flex;
+}
+.searchiconholder{
+    width: 20px;
+    height: 44px;
+    padding: 0px 13px 0px 0px;
+    margin: -5px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.searchimageholder{
+    background-image: url("searchicon.png");
+    height: 20px;
+    width: 20px;
+}
+.keyandmicholderdiv{
+    width: 24px;
+    height: 44px;
+    padding: 0px 8px;
+    margin: -5px 0px 0px;
+    right: 0;
+}
+.keyandmicholderdiv:hover{
+    cursor: pointer;
+}
+.shet{
+    margin-left: -1px;
+}
+.microphoneimageholder{
+    background-image: url("microphoneicon.png");
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+}
+.keyboardimageholder{
+    background-image: url("keyboardicon.png");
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+}
+.midbuttonsholder{
+    width: 584px;
+    height: 70px;
+    padding: 18px 0px 0px;
+}
+.midbuttonsinnerholder{
+    width: 584px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    height: 36px;
+    width: 110.5px;
+    background-color: rgb(248,249,251);
+    padding: 0px 16px;
+    margin: 11px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(60,64,68);
+}
+.luckybutton:hover{
+    width: 108.5px;
+    height: 34px;
+    border: rgb(218, 220, 224) 1px solid;
+    box-shadow: rgb(226,227,229) 0px 1px 0px;
+}
+.googlesearchbutton{
+    width: 96px;
+    margin-right: 6px;
+}
+.googlesearchbutton:hover{
+    width: 94px;
+    height: 34px;
+    border: rgb(218, 220, 224) 1px solid;
+    box-shadow: rgb(226,227,229) 0px 1px 0px;
+}
+.googleoffer{
+    width: 100%;
+    height: 28px;
+    margin: 0px 0px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googleofferp{
+    font-size: 13px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+.googleoffertext{
+    color: rgb(26, 13, 171);
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px 3px;
+    font-family: Arial, sans-serif;
+}
+.idk{
+    padding: 0px 6px;
+}
+.googleofferholder{
+    width: 205px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googleoffertext:hover{
+    text-decoration: underline;
+}
+.bottombar{
+    position: absolute;
+    width: 100%;
+    height: 82px;
+    background-color: rgb(242, 242, 242);
+    bottom: 0;
+}
+.bottomtopbar{
+    width: 100% - 2px;
+    height: 40px;
+    border: rgb(218, 220, 224) 1px solid;
+    display: flex;
+}
+.bottomtopbartextholder{
+    width: 400px;
+    height: 100%;
+    padding-left: 29px;
+    display: flex;
+    align-items: center;
+    margin-top: -1px;
+}
+h4{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 400;
+}
+.bottombartextbox{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.bottomtextbox{
+    height: 40px;
+    padding-left: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
+}
+.bottomtextbox:hover{
+    text-decoration: underline;
+}
+.bottomtextboxmod{
+    margin-left: 3px;
+}
+.bottombaratext{
+    margin: 0px;
+    font-size: 14px;
+}
+.bottomtextboxmod2{
+    margin-left: auto;
+}
+.bottomtextboxmod3{
+    margin-right: 30px;
+}
+.searchinputholder{
+    height: 34px;
+    width: 448px;
+    padding-bottom: 5px;
+}
+input{
+    width: 444px;
+    height: 32px;
+    border: none;
+}
+input:focus{
+    outline: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+}
