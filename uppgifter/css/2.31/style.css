@@ -1,0 +1,376 @@
+body{
+    margin: 0px;
+}
+.background{
+    width: 100%;
+    height: auto;
+    background-image: url("2.31 background 4K.png");
+    background-position: center;
+    padding-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.topbar{
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+.logo{
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 50px;
+    color: white;
+}
+.CDdropdown{
+    position: absolute;
+    margin-top: 264px;
+    width: 462px;
+    height: 200px;
+    background-color: blue;
+    display: none;
+    border-radius: 0px 0px 10px 10px;
+}
+.topbarbutton{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    border: rgb(46, 46, 46) 2px solid;
+    margin: 20px;
+    height: 60px;
+    cursor: pointer;
+    color: rgb(66, 66, 66);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.topbarbutton:hover{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    animation: topbuttonhover 1500ms;
+}
+.firsttopbutton{
+    margin-left: auto;
+    border-radius: 10px;
+}
+hr{
+    width: 90vw;
+}
+.tb3{
+    border-radius: 10px;
+}
+.tb3:hover{
+    border-radius: 10px 10px 0px 0px;
+}
+.tb3:hover .CDdropdown{
+    display: block;
+}
+.CDbtn3{
+    border-radius: 0px 0px 10px 10px;
+}
+.CDbtns{
+    margin: 0px;
+    cursor: pointer;
+}
+.CDbtns:hover{
+    background-color: white;
+    color: black;
+    animation: CBbtnsselect 500ms;
+}
+@keyframes CBbtnsselect{
+    0%{ color: white;}
+    100%{ color: black;}
+}
+.tb2:hover .Gdropdown{
+    display: block;
+}
+.logoimg{
+    background-image: url("Lmao-up logo.png");
+    background-size: 120px;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+}
+.box{
+    width: 70%;
+    height: 600px;
+    background-color: rgb(255, 239, 254);
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 50px;
+    display: flex;
+}
+.LD{
+    height: 500px;
+    border-radius: 20px;
+    margin-top: auto;
+    margin-left: 50px;
+    margin-bottom: auto;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+p{
+    font-family: sans-serif;
+    margin-left: 25px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.textholder{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    border: black 2px solid;
+    font-family: sans-serif;
+    color: black;
+    font-size: 50px;
+    margin-left: 25px;
+    padding: 0px 15px;
+    border-radius: 5px;
+    animation: fadeback 1s;
+}
+@keyframes fadeback{
+    0%{background-color: black; color: white;}
+    100%{background-color: transparent; color: black;}
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    animation: fade 1s;
+}
+@keyframes fade{
+    0%{background-color: transparent; color: black;}
+    100%{background-color: black; color: white;}
+}
+@media screen and (max-width: 1770px){
+    h1{
+        margin-top: 0px;
+        font-size: 75px;
+        margin-bottom: 10px;
+    }
+    .box{
+        flex-direction: column;
+        height: 1000px;
+        align-items: center;
+    }
+    .LD{
+        width: 500px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .textholder{
+        align-items: center;
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    .button{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 1530px){
+    .box{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1220px){
+    p{
+        font-size: 25px;
+        margin-bottom: 75px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .firsttopbuttond, .tb3{
+        font-size: 35px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 204px;
+        width: 325px;
+        height: 140px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .textholder{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 950px){
+    .logo{
+        margin-left: 0px;
+    }
+    .firsttopbuttond, .tb3, .firsttopbutton{
+        font-size: 30px;
+    }
+    .tb3{
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .firsttopbutton{
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 164px;
+        width: 279px;
+        height: 120px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+@media screen and (max-width: 780px){
+    h1{
+        font-size: 50px;
+    }
+    .LD{
+        width: 95%;
+        height: auto;
+        margin-top: 10px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .firsttopbuttond, .tb3{
+        font-size: 40px;
+    }
+    .firsttopbuttond, .tb3, .firsttopbutton, .logo{
+        font-size: 20px;
+    }
+    .tb3{
+        height: 30px;
+    }
+    .firsttopbutton{
+        height: 30px;
+        margin-top: 24px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 113px;
+        width: 187px;
+        height: 80px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+@media screen and (max-width: 715px){
+    .box{
+        height: auto;
+        padding-bottom: 30px;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 535px){
+    .firsttopbuttond, .tb3, .firsttopbutton, .logo{
+        font-size: 15px;
+    }
+    .logoimg{
+        width: 64px;
+        height: 64px;
+        background-size: 64px;
+    }
+    .topbar{
+        height: 80px;
+    }
+    .topbarbutton{
+        height: 20px;
+        border: none;
+        border: rgb(66, 66, 66) 1px solid;
+        border-radius: 5px;
+    }
+    .topbarbutton{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .firsttopbutton{
+        margin-bottom: 21px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 87px;
+        width: 140px;
+        height: 65px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+    h1{
+        margin-left: 0px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 20px;
+    }
+    .LD{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 410px){
+    .firsttopbuttond, .tb3, .firsttopbutton, .logo{
+        font-size: 10px;
+    }
+    .topbarbutton{
+        height: 15px;
+    }
+    .firsttopbutton{
+        margin-top: 12px;
+        margin-right: 0px;
+    }
+    .logoimg{
+        width: 32px;
+        height: 32px;
+        background-size: 32px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 61px;
+        width: 94px;
+        height: 43px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .button{
+        font-size: 30px;
+    }
+    .topbar{
+        height: 40px;
+    }
+}
+@media screen and (max-width: 335px){
+    .tb3{
+        height: 10px;
+    }
+    .firsttopbutton{
+        margin-top: 6px;
+        height: 10px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 55px;
+        width: 94px;
+        height: 43px;
+        background-color: blue;
+        display: none;
+    }
+}

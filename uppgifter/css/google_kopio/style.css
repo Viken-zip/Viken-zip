@@ -294,9 +294,30 @@ input{
     width: 444px;
     height: 32px;
     border: none;
+    margin-left: -2px;
+    margin-top: -1px;
+    font-size: 16px;
 }
 input:focus{
     outline: none;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.87);
+}
+@media only screen and (max-width: 650px){
+    .bottomtextbox{
+        padding-left: 15px;
+    }
+}
+@media only screen and (max-width: 570px){
+    .bottomtextbox{
+        padding-left: 7px;
+    }
+}
+@media only screen and (max-width: 470px){
+    .bottombartextbox{
+        display: none;
+    }
+}
+button{
+    display: none;
 }

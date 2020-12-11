@@ -1,0 +1,657 @@
+body{
+    margin: 0px;
+}
+.background{
+    width: 100%;
+    height: 3000px;
+    background-color: rgb(121, 0, 101);
+    animation: fade 3s;
+}
+@keyframes fade{
+    0%{background-color: black;}
+    100%{background-color: rgb(121, 0, 101);}
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.topbar{
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+.logo{
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 50px;
+    color: white;
+}
+.CDdropdown{
+    position: absolute;
+    margin-top: 264px;
+    width: 462px;
+    height: 200px;
+    background-color: blue;
+    display: none;
+    border-radius: 0px 0px 10px 10px;
+}
+.topbarbutton{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    border: rgb(88, 236, 255) 2px solid;
+    margin: 20px;
+    height: 60px;
+    cursor: pointer;
+    color: rgb(88, 236, 255);
+}
+.topbarbutton:hover{
+    background-color: black;
+    color: white;
+    animation: topbuttonhover 1500ms;
+}
+@keyframes topbuttonhover {
+    0%{background-color: rgb(18, 0, 68);}
+    100%{background-color: black;}
+}
+.firsttopbutton{
+    margin-left: auto;
+    border-radius: 10px;
+}
+hr{
+    width: 90vw;
+}
+.tb3{
+    border-radius: 10px;
+    font-size: 50px;
+}
+.tb3:hover{
+    border-radius: 10px 10px 0px 0px;
+}
+.tb3:hover .CDdropdown{
+    display: block;
+}
+.CDbtn3{
+    border-radius: 0px 0px 10px 10px;
+}
+.CDbtns{
+    margin: 0px;
+    cursor: pointer;
+}
+.CDbtns:hover{
+    background-color: white;
+    color: black;
+    animation: CBbtnsselect 500ms;
+}
+@keyframes CBbtnsselect{
+    0%{ color: white;}
+    100%{ color: black;}
+}
+.firsttopbutton{
+    font-size: 50px;
+}
+.tb2:hover .Gdropdown{
+    display: block;
+}
+.lists{
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 150px;
+}
+.list{
+    margin-top: 60px;
+}
+.logoimg{
+    background-image: url("Lmao-up logo.png");
+    background-size: 120px;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+}
+.LDimage{
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+    background-image: url("LPotlogo.png");
+    background-position: center;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+.innertopbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(83, 0, 69);
+}
+.buybutton{
+    color: lime;
+    font-family: sans-serif;
+    font-size: 30px;
+    border: lime 1px solid;
+    padding: 10px 40px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: 200px;
+}
+.buybutton:hover{
+    background-color: lime;
+    color: white;
+    animation: hover 300ms;
+}
+@keyframes hover{
+    0%{color: lime; background-color: transparent;}
+    100%{color: white; background-color: lime;}
+}
+.LDtitle{
+    color: white;
+    font-size: 80px;
+    font-family: sans-serif;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+.LDundertitle{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: white;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+.imac{
+    width: 100%;
+    height: 500px;
+    background-image: url("imac with affinity (LPoicon).png");
+    background-position: center;
+    background-size: 948px;
+    margin: 25px auto;
+    background-repeat: no-repeat;
+}
+.lmao, .descriptionv2{
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tigerimg{
+    width: 100%;
+    height: auto;
+}
+.bildmetext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.techspec{
+    color: rgb(238, 238, 238);
+    font-family: sans-serif;
+    font-size: 100px;
+    margin: 10px auto;
+    font-weight: 300;
+}
+.techspecholder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34, 34, 34);
+}
+.techspecsheet{
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    height: 520px;
+}
+.macspec{
+    display: flex;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.macspecimg{
+    width: 400px;
+}
+.macspectitle{
+    width: 100%;
+    height: 10%;
+}
+.macspectitletext{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(238, 238, 238);
+    margin: 0px;
+    margin-left: 30px;
+}
+.macspectextsizer{
+    width: 100%;
+    height: 100%;
+}
+.macspecslistsholder{
+    display: flex;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.machardwarelist{
+    width: 70%;
+}
+.macsoftwarelist{
+    width: 30%;
+}
+.bottomuls, h2{
+    color: rgb(150, 150, 150);
+    font-weight: 100;
+}
+h2{
+    color: rgb(238, 238, 238);
+    margin-left: 30px;
+}
+.short{
+    width: 60%;
+    margin-top: 60px;
+}
+.notop{
+    width: 60%;
+    margin-bottom: 60px;
+}
+.buybutton{
+    margin-right: 25px;
+    margin-left: 30px;
+}
+@media screen and (max-width: 2500px){
+    .lists, .techspecsheet{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1950px){
+    .lists, .techspecsheet{
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    .lists{
+        display: flex;
+    }
+    .buybutton{
+        margin-right: 25px;
+    }
+    .LDtitle{
+        margin-top: 0px;
+    }
+    .LDundertitle{
+        margin-bottom: 10px;
+    }
+    .buybutton{
+        margin-left: 30px;
+    }
+    
+}
+@media screen and (max-width: 1920px){
+    .lists{
+        font-size: 23px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .lists, .techspecsheet{
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    .buybutton{
+        margin-right: 25px;
+    }
+    .LDtitle{
+        margin-top: 0px;
+    }
+    .LDundertitle{
+        margin-bottom: 10px;
+    }
+    .buybutton{
+        margin-left: 30px;
+    }
+    .bottomuls{
+        font-size: 15px;
+    }
+    .machardwarelist{
+        width: 500px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .macspectitletext{
+        font-size: 40px;
+    }
+    .macspec{
+        width: 1000px;
+    }
+    .lmao{
+        font-size: 20px;
+    }
+    .background{
+        height: 2000px;
+    }
+}   
+@media screen and (max-width: 1100px){
+    .lists, .techspecsheet{
+        font-size: 10px;
+        padding-bottom: 50px;
+    }
+    .LDtitle{
+        font-size: 40px;
+    }
+    .LDundertitle{
+        font-size: 10px;
+    }
+    .bottomuls{
+        font-size: 12px;
+    }
+    .machardwarelist{
+        width: 300px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .macspectitletext{
+        font-size: 40px;
+    }
+    .macspec{
+        width: 800px;
+    }
+    .macspecimg{
+        height: 200px;
+        width: 200px;
+    }
+    .techspecsheet{
+        height: 500px;
+    }
+    .techspec{
+        font-size: 50px;
+    }
+    .firsttopbuttond, .tb3{
+        font-size: 35px;
+    }
+    .background{
+        height: 2000px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 204px;
+        width: 325px;
+        height: 140px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+@media screen and (max-width: 950px){
+    .imac{
+        height: 400px;
+        background-size: 700px;
+    }
+    .buybutton{
+        font-size: 30px;
+        border: lime 1px solid;
+        padding: 5px 20px;
+        border-radius: 15px;
+    }
+    .LDtitle{
+        font-size: 40px;
+    }
+    .LDundertitle{
+        font-size: 10px;
+    }
+    .macspecslistsholder{
+        width: 400px;
+    }
+    .macspectextsizer{
+        width: 400px;
+    }
+    .macspec{
+        width: 400px;
+        margin-left: 100px
+    }
+    .macsoftwarelist{
+        width: auto;
+    }
+    .lmao{
+        font-size: 13px;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .firsttopbuttond, .tb3, .firsttopbutton{
+        font-size: 30px;
+    }
+    .tb3{
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .firsttopbutton{
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 164px;
+        width: 279px;
+        height: 120px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+@media screen and (max-width: 780px){
+    .lists, .techspecsheet{
+        font-size: 8px;
+        padding-bottom: 60px;
+    }
+    .LDtitle{
+        font-size: 30px;
+    }
+    .LDundertitle{
+        font-size: 7px;
+    }
+    .macspecslistsholder{
+        width: 400px;
+    }
+    .macspec{
+        margin-left: 50px
+    }
+    .techspecholder{
+      flex-direction: column;  
+    }
+    .macspecslistsholder{
+        flex-direction: column;
+    }
+    .firsttopbuttond, .tb3{
+        font-size: 40px;
+    }
+    .firsttopbuttond, .tb3, .firsttopbutton, .logo{
+        font-size: 20px;
+    }
+    .tb3{
+        height: 30px;
+    }
+    .firsttopbutton{
+        height: 30px;
+        margin-top: 24px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 113px;
+        width: 187px;
+        height: 80px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+@media screen and (max-width: 655px){
+    .macspecslistsholder{
+        width: 300px;
+    }
+    .macspec{
+        flex-direction: column;
+        width: 400px;
+    }
+    .background{
+        height: 2000px;
+    }
+    .techspecsheet{
+        padding-bottom: 200px;
+        align-items: center;
+    }
+    .macspec{
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .techspecsheeted{
+        padding-bottom: 25px;
+    }
+    .techspecsheeted2{
+        padding-bottom: 130px;
+    }
+}
+@media screen and (max-width: 535px){
+    .lists, .techspecsheet{
+        font-size: 4px;
+    }
+    .buybutton{
+        font-size: 10px;
+    }
+    .LDtitle{
+        font-size: 20px;
+    }
+    .LDundertitle{
+        font-size: 5px;
+    }
+    .innertopbar{
+        height: 150px;
+    }
+    .LDimage{
+        width: 125px;
+        height: 125px;
+        background-size: 125px;
+    }
+    .macspec{
+        width: 300px;
+        margin-left: 10px;
+    }
+    .techspecsheet{
+        width: auto;
+    }
+    .macspectextsizer{
+        width: 300px;
+    }
+    .techspec{
+        font-size: 35px;
+    }
+    .Lmao{
+        font-size: 5px;
+    }
+    .imac{
+        width: 100%;
+        height: 250px;
+        background-size: 448px;
+        margin: 25px auto;
+    }
+    .firsttopbuttond, .tb3, .firsttopbutton, .logo{
+        font-size: 15px;
+    }
+    .logoimg{
+        width: 64px;
+        height: 64px;
+        background-size: 64px;
+    }
+    .topbar{
+        height: 80px;
+    }
+    .topbarbutton{
+        height: 20px;
+        border: none;
+        border: aqua 1px solid;
+    }
+    .topbarbutton{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .firsttopbutton{
+        margin-bottom: 21px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 87px;
+        width: 140px;
+        height: 65px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+@media screen and (max-width: 410px){
+    .lists, .techspecsheet{
+        font-size: 3px;
+    }
+    .firsttopbuttond, .tb3, .firsttopbutton, .logo{
+        font-size: 10px;
+    }
+    .topbarbutton{
+        height: 15px;
+    }
+    .firsttopbutton{
+        margin-top: 12px;
+        margin-right: 0px;
+    }
+    .logoimg{
+        width: 32px;
+        height: 32px;
+        background-size: 32px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 61px;
+        width: 94px;
+        height: 43px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+@media screen and (max-width: 335px){
+    .list, .techspecsheet{
+        font-size: 2px;
+    }
+    .tb3{
+        height: 10px;
+    }
+    .firsttopbutton{
+        margin-top: 6px;
+        height: 10px;
+    }
+    .CDdropdown{
+        position: absolute;
+        margin-top: 55px;
+        width: 94px;
+        height: 43px;
+        background-color: blue;
+        display: none;
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+.lists{
+    display: none;
+}
