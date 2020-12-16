@@ -1,0 +1,289 @@
+/* om oss*/
+body{
+    margin: 0px;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    background-image: url("bg-om-oss.jpg");
+    background-size: auto 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.px{
+    display: none;
+}
+.topbar{
+    height: 15vh;
+    width: 100%;
+    background-color: white;
+}
+.innertopbar{
+    height: 50%;
+    width: 86%;
+    display: flex;
+    padding: 0px 7%;
+}
+.title{
+    margin: auto 0px;
+    font-size: 22px;
+    font-family: roboto slab;
+    font-weight: 400;
+}
+.icons{
+    height: 100%;
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+}
+img{
+    height: 50%;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.lefticon{
+    margin-left: auto;
+    margin-right: 15px;
+}
+.righticon{
+    margin: auto 0px;
+}
+.innerbottombar{
+    padding: 0px 15%;
+    height: 50%;
+    width: 70%;
+    box-shadow: gray 0 0 5px 0px inset;
+    display: flex;
+}
+.button{
+    text-decoration: none;
+    color: black;
+    margin: auto auto;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.aktiv{
+    color: white;
+    font-size: 13px;
+    background-color: #E26641;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.mittentext{
+    color: white;
+}
+.top{
+    margin-top: auto;
+    font-size: 9vw;
+    margin-bottom: 0px;
+    font-family: roboto slab;
+    font-weight: 300;
+}
+.bottom{
+    margin: 0px 30px;
+    margin-bottom: auto;
+    font-size: 13px;
+    font-family: roboto;
+    font-size: 2vh;
+}
+.mittentittle{
+    font-size: 50px;
+    font-size: 18vw;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: roboto slab;
+    font-weight: 400;
+}
+.dots{
+    font-size: 60px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+/* extra kontakt sida */
+.kontaktbackground{
+    width: 100%;
+    margin: 0px;
+    background-image: url("bg-kontakt.jpg");
+    background-size: auto 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+span{
+    color: white;
+}
+.kontakttitle{
+    color: white;
+}
+.midboxholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infobox{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    margin-bottom: 25px; 
+    font-family: sans-serif;
+}
+.margindown{
+    margin-bottom: 25px;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+}
+input{
+    font-family: sans-serif;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    border: gray 1px solid;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: white;
+    margin: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+textarea{
+    font-family: sans-serif;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    border: gray 1px solid;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: white;
+    margin: 5px;
+    resize: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.meddelande{
+    height: 50px;
+}
+.skickabutton{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    background-color: #E26641;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-top: 5px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+/* media skite*/
+@media screen and (min-width: 500px){
+    .kontaktbackground{
+        height: 100vh;
+    }
+    .secret{
+        position: absolute;
+        height: 7.5vh;
+        width: 100%;
+        background-color: white;
+    }
+    .innerbottombar{
+        display: none;
+    }
+    .px{
+        display: block;
+    }
+    .topbar{
+        height: 7.5vh;
+    }
+    .innertopbar{
+        height: 100%;
+    }
+    .lefticon{
+        margin-left: 5vw;
+    }
+    .button{
+        margin-right: 0px;
+        font-size: 1.5vh;
+    }
+    .aktiv{
+        margin-left: auto;
+        padding: 1.25vh 2.5vh;
+    }
+    .kontakt{
+        margin-left: 30px;
+    }
+    .topbar{
+        width: 80vw;
+        padding: 0px 10vw;
+    }
+    .background{
+        align-items: center;
+    }
+    .bottom{
+        width: 480px;
+    }
+    .mittentittle{
+        font-size: 13vh;
+    }
+    .title{
+        font-size: 3.5vh;
+    }
+    .top{
+        font-size: 7vh;
+    }
+    .kontaktsid{
+        background-color: unset;
+        color: black;
+        padding: 0px;
+    }
+}
+@media screen and (min-width: 900px){
+    .midboxholder{
+        flex-direction: row;
+    }
+    .infobox{
+        width: 50%;
+        font-size: 20px;
+        font-size: 2.5vh;
+    }
+    .inputbox{
+        width: 50%;
+    }
+    .midboxholder{
+        width: 90vw;
+        margin: 0px auto;
+        margin-bottom: auto;
+    }
+    .inputbox{
+        width: 405px;
+    }
+    span{
+        margin-left: 40%;
+    }
+    input{
+        font-size: 1.5vh;
+    }
+    textarea{
+        font-size: 1.5vh;
+
+    }
+    .kontakttitle{
+        margin-top: auto;
+    }
+}
+@media screen and (min-width: 1000px){
+    .topbar{
+        padding: 0px 20vw;
+        width: 60vw;
+    }
+}
