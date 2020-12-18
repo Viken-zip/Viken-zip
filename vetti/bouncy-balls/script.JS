@@ -1,9 +1,14 @@
-let ball = document.getElementById("ball");
-let ballx = 0;
-let bally = 20;
-let directionvalue = 1;
+    let ball = document.getElementById("ball");
+    let ballx = 0;
+    let bally = 20;
+    let directionvalue = 1;
 
 setInterval(update, 1);
+setInterval(cordinates, 100)
+
+function cordinates(){
+    console.log((bally),(ballx));
+    }
 
 function update(){
 
