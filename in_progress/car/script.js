@@ -16,19 +16,27 @@ function update(){
 
     car.style.transform = "rotate(" + carRR + "deg)";
 
+    if(carRR == -1){
+        carRR = 359;
+    }
+
     if(keyW == true){
-
-        if(carRR == 0){
-            cary -= 1;
-        } else if (carRR > 315){
-            carx +=1;
-        } else if (carRR == 180){
-            cary += 1;
-        } else if (carRR == 270){
-            carx -= 1
-        }
-
         /*
+        if(carRR > ){
+        }else if (carRR > 315){
+            cary -= 1;
+        }else if(carRR > 225){
+            carx -= 1;
+        } else if (carRR > 135){
+            cary +=1;
+        } else if (carRR > 45){
+            carx += 1;
+        } else if (carRR > 0){
+            cary -= 1
+        }
+        */
+
+        
             cary -= (1 - (carRR * 0.0111111));
 
             if(carRR <= 90){
@@ -36,9 +44,9 @@ function update(){
             } else if (carRR > 135){
             carx += (1 - ((carRR - 90) * 0.0111111));
             } else if (carRR > 90){
-                carx += ((carRR * 0.0111111) - ((carRR - 90) * 0.0111111));
-                }
-                */
+            carx += ((carRR * 0.0111111) - ((carRR - 90) * 0.0111111));
+            }
+                
     }
 
     if(keyS == true){
