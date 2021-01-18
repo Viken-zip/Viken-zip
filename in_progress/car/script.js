@@ -33,7 +33,7 @@ function update(){
             carx += 1;
         } else if (carRR > 0){
             cary -= 1
-        }
+        }.
         */
 
         
