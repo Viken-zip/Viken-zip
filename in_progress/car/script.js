@@ -7,64 +7,46 @@ let keyA = false;
 let keyW = false;
 let carRR = 0;
 
+
 setInterval(update, 1)
+
+const speed = 1;
+const rotationSpeed = 1;
+
+let forwardRotation = 0;
 
 function update(){
 
+    //
+    // Uppdater först
+    //
+
+    const rotationInRadians = forwardRotation * Math.PI / 180 - Math.PI / 2;
+    const xMultiplier = Math.cos(rotationInRadians);
+    const yMultiplier = Math.sin(rotationInRadians);
+
+    let direction = 0;
+    direction += keyW ? 1 : 0;
+    direction -= keyS ? 1 : 0;
+
+    carx += speed * xMultiplier * direction;
+    cary += speed * yMultiplier * direction;
+    
+    let rotateDirection = 0;
+    rotateDirection -= keyA ? 1 : 0;
+    rotateDirection += keyD ? 1 : 0;
+
+    carRR += rotationSpeed * rotateDirection;
+    forwardRotation += (carRR - forwardRotation) * 0.008;
+
+
+    //
+    // Sen rit ut
+    //
+
     car.style.top = cary + "px";
     car.style.left = carx + "px";
-
     car.style.transform = "rotate(" + carRR + "deg)";
-
-    if(carRR == -1){
-        carRR = 359;
-    }
-
-    if(keyW == true){
-        /*
-        if(carRR > ){
-        }else if (carRR > 315){
-            cary -= 1;
-        }else if(carRR > 225){
-            carx -= 1;
-        } else if (carRR > 135){
-            cary +=1;
-        } else if (carRR > 45){
-            carx += 1;
-        } else if (carRR > 0){
-            cary -= 1
-        }.
-        */
-
-        
-            cary -= (1 - (carRR * 0.0111111));
-
-            if(carRR <= 90){
-            carx += ((carRR) * 0.0111111);
-            } else if (carRR > 135){
-            carx += (1 - ((carRR - 90) * 0.0111111));
-            } else if (carRR > 90){
-            carx += ((carRR * 0.0111111) - ((carRR - 90) * 0.0111111));
-            }
-                
-    }
-
-    if(keyS == true){
-        cary += 1;
-    }
-    if(keyD == true){
-        carRR += 1;
-        console.log(carRR);
-    }
-
-    if(keyA == true){
-        carRR -= 1;
-        console.log(carRR);
-    }
-
-    if(carRR == 360){
-        carRR = 0;
-    }
 }
 
 window.addEventListener('keydown', onKeyDown)
