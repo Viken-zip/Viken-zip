@@ -39,12 +39,14 @@ function update(){
     }
 
     if(maxspeed > 3.5){
-        maxspeed = 3.5;
+        maxspeed = 999999;
     }
 
     if(maxspeed < -0.5){
         maxspeed = -0.5;
     }
+
+
 
     if(speed > maxspeed){
         speed = maxspeed;
@@ -68,7 +70,11 @@ function update(){
         document.getElementById("gear").innerHTML = "6";
     }else if (maxspeed == 3.5){
         document.getElementById("gear").innerHTML = "7";
+    }else if (maxspeed > 3.5){
+        document.getElementById("gear").innerHTML = "V-TECH";
     }
+
+
 
     const rotationInRadians = forwardRotation * Math.PI / 180 - Math.PI / 2;
     const xMultiplier = Math.cos(rotationInRadians);
@@ -90,12 +96,23 @@ function update(){
     carRR += rotationSpeed * rotateDirection * speed;
     forwardRotation += (carRR - forwardRotation) * 0.008;
 
-    console.log(keyW ? 1 : 0);
+    console.log(cary);
 
+    if (cary > 950){
+        cary = 955
+    }
 
-    //
-    // Sen rit ut
-    //
+    if (cary < 0){
+        cary = 0
+    }
+
+    if (carx > 1850){
+        carx = 1850
+    }
+
+    if (carx < 0){
+        carx = 0
+    }
 
     car.style.top = cary + "px";
     car.style.left = carx + "px";
