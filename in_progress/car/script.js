@@ -30,6 +30,10 @@ function update(){
         speed -= 0.005;
     }
 
+    if(keyS === true){
+        speed -= 0.02
+    }
+
     if(speed < 0){
         speed = 0;
     }
@@ -83,8 +87,10 @@ function update(){
     rotateDirection -= keyA ? 1 : 0;
     rotateDirection += keyD ? 1 : 0;
 
-    carRR += rotationSpeed * rotateDirection;
+    carRR += rotationSpeed * rotateDirection * speed;
     forwardRotation += (carRR - forwardRotation) * 0.008;
+
+    console.log(keyW ? 1 : 0);
 
 
     //
