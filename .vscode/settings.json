@@ -2,5 +2,9 @@
     "files.associations": {
         "iostream": "cpp",
         "iosfwd": "cpp"
-    }
+    },
+    "workbench.preferredHighContrastColorTheme": "Pink Cat Boo",
+    "workbench.preferredLightColorTheme": "Pink Cat Boo",
+    "workbench.preferredDarkColorTheme": "Pink Cat Boo",
+    "workbench.colorTheme": "Pink Cat Boo"
 }

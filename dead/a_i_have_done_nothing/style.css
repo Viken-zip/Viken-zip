@@ -1,0 +1,152 @@
+body{
+    margin: 0px;
+}
+.background{
+    width: 100%;
+    height: 200vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.topbar{
+    height: 100px;
+    width: 100%;
+    background-color: orangered;
+    display: flex;
+}
+a{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.firsttopbarholder{
+    margin-left: auto;
+}
+.lasttopbarholder{
+    margin-right: auto;
+}
+.topbarfirst{
+    margin-left: 20px;
+    margin-right: 20px;
+    animation: topbarfirst 6s;
+}
+.topbarone{
+    margin-left: 20px;
+    margin-right: 20px;
+    animation: topbarone 7s;
+}
+.topbartwo{
+    margin-left: 20px;
+    margin-right: 20px;
+    animation: topbartwo 8s;
+}
+.topbartree{
+    margin-left: 20px;
+    margin-right: 20px;
+    animation: topbartree 9s;
+}
+.topbarfour{
+    margin-left: 20px;
+    margin-right: 20px;
+    animation: topbarfour 10s;
+}
+.topbarlast{
+    margin-left: 20px;
+    margin-right: 20px;
+    animation: topbarlast 11s;
+}
+.topbartext{
+    display: flex;
+}
+@keyframes topbarfirst {
+    0%{color: orangered;}
+    83%{color: orangered; margin-right: 0px; margin-left: 40px;}
+    100%{color: black; margin-right: 20px; margin-left: 20px;}
+}
+@keyframes topbarone {
+    0%{color: orangered;}
+    85%{color: orangered; margin-right: 0px; margin-left: 40px;}
+    100%{color: black; margin-right: 20px; margin-left: 20px;}
+}
+@keyframes topbartwo {
+    0%{color: orangered;}
+    87%{color: orangered; margin-right: 0px; margin-left: 40px;}
+    100%{color: black; margin-right: 20px; margin-left: 20px;}
+}
+@keyframes topbartree {
+    0%{color: orangered;}
+    89%{color: orangered; margin-right: 0px; margin-left: 40px;}
+    100%{color: black; margin-right: 20px; margin-left: 20px;}
+}
+@keyframes topbarfour {
+    0%{color: orangered;}
+    90%{color: orangered; margin-right: 0px; margin-left: 40px;}
+    100%{color: black; margin-right: 20px; margin-left: 20px;}
+}
+@keyframes topbarlast {
+    0%{color: orangered;}
+    91%{color: orangered; margin-right: 0px; margin-left: 40px;}
+    100%{color: black; margin-right: 20px; margin-left: 20px;}
+}
+h1{
+    color: white;
+    font-size: 150px;
+    margin: 0px auto;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    animation: title 1s;
+}
+.paf{
+    display: flex;
+    margin: 150px auto;
+}
+p{
+    color: white;
+    font-size: 150px;
+    font-family: sans-serif;
+    text-indent: 75px;
+}
+.first{
+    animation: fi 2s;
+    color: white;
+}
+.second{
+    animation: se 3s;
+    color: white;
+}
+.third{
+    animation: th 4s;
+    color: white;
+}
+.fourt{
+    animation: fo 5s;
+    color: white;
+}
+@keyframes title {
+    from {color: black; margin: 0px auto; margin-bottom: 200px;}
+    to {color: white; margin: 200px auto; margin-bottom: 0px;}
+}
+@keyframes fi {
+    0%{color: black;}
+    50%{color: black; margin-top: 0px; margin-bottom: 150px;}
+    100%{color: white; margin-top: 150px; margin-bottom: 0px;}
+}
+@keyframes se {
+    0%{color: black;}
+    66%{color: black; margin-top: 0px; margin-bottom: 150px;}
+    100%{color: white; margin-top: 150px; margin-bottom: 0px;}
+}
+@keyframes th {
+    0%{color: black;}
+    75%{color: black; margin-top: 0px; margin-bottom: 150px;}
+    100%{color: white; margin-top: 150px; margin-bottom: 0px;}
+}
+@keyframes fo {
+    0%{color: black;}
+    80%{color: black; margin-top: 0px; margin-bottom: 150px;}
+    100%{color: white; margin-top: 150px; margin-bottom: 0px;}
+}
