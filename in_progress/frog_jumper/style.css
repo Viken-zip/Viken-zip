@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+#frame{
+    background-color: darkgreen;
+    width: 1024px;
+    height: 1024px;
+    display: flex;
+}
+#frog{
+    left: 128px;
+    top: 128px;
+    width: 32px;
+    height: 32px;
+    background-image: url("frog.png");
+    position: absolute;
+    transform: rotate(0deg);
+}
+#selector{
+    left: 128px;
+    top: 128px;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+}

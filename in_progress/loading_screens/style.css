@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url("giphy.gif");
+    background-size: 64px;
+}
+h1{
+    font-size: 100px;
+    font-family: sans-serif;
+}
