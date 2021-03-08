@@ -7,7 +7,7 @@ var currentBlocks = [];
 
 function moveLeft(){
     var left = parseInt(window.getComputedStyle(char).getPropertyValue("left"));
-    if(left>0){
+    if(left > 0){
         char.style.left = left - 2 + "px";
     }
 }
@@ -15,7 +15,7 @@ function moveLeft(){
 function moveRight(){
     var left = parseInt(window.getComputedStyle(char).getPropertyValue("left"));
 
-    if(left<380){
+    if(left < 380){
         char.style.left = left + 2 + "px";
     }
 }
@@ -73,7 +73,7 @@ var blocks = setInterval(function(){
     var charLeft = parseInt(window.getComputedStyle(char).getPropertyValue("left"));
     var drop = 0;
     if(charTop <= 0){
-        alert("Game over. Score: "+(counter-9));
+        alert("Game over. Score: " + (counter-9));
         clearInterval(blocks);
         location.reload();
     }
