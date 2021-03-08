@@ -44,12 +44,12 @@ var blocks = setInterval(function(){
     var blockLast = document.getElementById("block" + (counter-1));
     var holeLast = document.getElementById("hole" + (counter-1));
 
-    if(counter>0){
+    if(counter > 0){
         var blockLastTop = parseInt(window.getComputedStyle(blockLast).getPropertyValue("top"));
         var holeLastTop = parseInt(window.getComputedStyle(holeLast).getPropertyValue("top"));
     }
 
-    if(blockLastTop<400||counter==0){
+    if(blockLastTop < 400 || counter == 0){
         var block = document.createElement("div");
         var hole = document.createElement("div");
 
@@ -87,7 +87,7 @@ var blocks = setInterval(function(){
         iblock.style.top = iblockTop - 0.5 + "px";
         ihole.style.top = iblockTop - 0.5 + "px";
 
-        if(iblockTop < -20){
+        if(iblockTop < - 20){
             currentBlocks.shift();
             iblock.remove();
             ihole.remove();
