@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+}
+.box2{
+    background-color: rgb(124, 255, 255);
+    box-shadow: 0px 0px 3px inset;
+
+}
+.box3{
+    background-color: rgb(0, 184, 184);
+}
+.box4{
+    background-color: rgb(0, 184, 184);
+}
+h1{
+    margin: 0;
+}
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr; 
+    grid-template-areas: "box1 box1 box1 box1" "box3 box2 box2 box4" "box3 box2 box2 box4";
+}
+.box1{
+    grid-area: box1;
+    background-image: url("bannergood.png");
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.box2{
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+}
+.box3{
+    grid-area: box3;
+    display: flex;
+    flex-direction: column; 
+}
+.box4{
+    grid-area: box4;
+}
+h2{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    margin-bottom: 0;
+}
+a{
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin: 5px;
+}
+.box2 h1{
+    font-family: sans-serif;
+    font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box2 p{
+    margin-top: 5vh;
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.box3, .box4{
+    box-shadow: 0px 0px 5px inset;
+}
+neko, nekop{
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+neko{
+    margin-top: 40px;
+}
+nekop{
+    margin-top: 15px;
+}
